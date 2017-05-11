@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         rvContactos = (RecyclerView) findViewById(R.id.rvContacto);
+        rvContactos.setLayoutManager(new GridLayoutManager(this, 2));
 
         if(toolbar != null){
             setSupportActionBar(toolbar);
