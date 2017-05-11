@@ -42,25 +42,23 @@ public class ContactoAdaptador extends RecyclerView.Adapter<ContactoAdaptador.Co
                 .load(contacto.getUrlFoto())
                 .placeholder(R.drawable.button_like)
                 .into(contactoViewHolder.imgFoto);
-        contactoViewHolder.txtLikes.setText(String.valueOf(contacto.getLikes()));
+        contactoViewHolder.tvLikes.setText(String.valueOf(contacto.getLikes()));
 
     }
 
     @Override
-    public int getItemCount() {
-        return contactos.size();
-    }
+    public int getItemCount() {return 0; }
 
     public static class ContactoViewHolder extends RecyclerView.ViewHolder {
 
         private ImageView imgFoto;
-        private TextView txtLikes;
+        private TextView tvLikes;
 
         public ContactoViewHolder(View itemView) {
             super(itemView);
 
             imgFoto     = (ImageView) itemView.findViewById(R.id.imgFoto);
-            txtLikes     = (TextView) itemView.findViewById(R.id.txtLikes);
+            tvLikes     = (TextView) itemView.findViewById(R.id.txtLikes);
 
         }
     }
