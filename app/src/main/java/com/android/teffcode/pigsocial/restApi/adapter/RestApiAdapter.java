@@ -27,7 +27,7 @@ public class RestApiAdapter {
 
     public Gson construyeGsonDeserializadorMediaRecent(){
         GsonBuilder gsonBuilder = new GsonBuilder();
-//        gsonBuilder.registerTypeAdapter(ContactoResponse.class, new ContactoDeserializador());
+        gsonBuilder.registerTypeAdapter(ContactoResponse.class, new ContactoDeserializador());
         return gsonBuilder.create();
     }
 

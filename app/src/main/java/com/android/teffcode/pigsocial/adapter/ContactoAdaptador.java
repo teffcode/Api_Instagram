@@ -43,11 +43,10 @@ public class ContactoAdaptador extends RecyclerView.Adapter<ContactoAdaptador.Co
                 .placeholder(R.drawable.button_like)
                 .into(contactoViewHolder.imgFoto);
         contactoViewHolder.tvLikes.setText(String.valueOf(contacto.getLikes()));
-
     }
 
     @Override
-    public int getItemCount() {return 0; }
+    public int getItemCount() {return contactos.size(); }
 
     public static class ContactoViewHolder extends RecyclerView.ViewHolder {
 

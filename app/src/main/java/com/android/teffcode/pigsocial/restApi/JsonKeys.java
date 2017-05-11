@@ -6,6 +6,8 @@ package com.android.teffcode.pigsocial.restApi;
 
 public class JsonKeys {
 
+    // DATOS QUE ME INTERESAN - json viewer
+
     public static final String MEDIA_RESPONSE_ARRAY         = "data";
     public static final String USER                         = "user";
     public static final String USER_ID                      = "id";
