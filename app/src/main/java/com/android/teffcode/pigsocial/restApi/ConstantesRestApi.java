@@ -14,5 +14,7 @@ public class ConstantesRestApi {
     public static final String KEY_GET_RECENT_MEDIA_USER = "users/self/media/recent/";
     public static final String URL_GET_RECENT_MEDIA_USER = KEY_GET_RECENT_MEDIA_USER + KEY_ACCESS_TOKEN + ACCESS_TOKEN;
     //https://api.instagram.com/v1/users/self/media/recent/?access_token=ACCESS-TOKEN
+    // PETICION
+    // static para accesarlas
 
 }
